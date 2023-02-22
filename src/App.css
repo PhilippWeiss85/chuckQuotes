@@ -1,3 +1,7 @@
+h1 {
+  text-align:center;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -5,17 +9,25 @@ main {
   align-items: center;
 }
 
+
 section {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 45vw;
+  width: 70vw;
+  max-width: 600px;
+  height: 150px;
   box-shadow: 1px 1px 5px chartreuse;
   padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
-p {
+
+
+.text {
   text-align: center;
 }
 
@@ -28,7 +40,24 @@ p {
   }
 }
 
-.animated-background {
+.animated-background_text {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #F6F6F6;
+  background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+  background-size: 600px 104px;
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 20px;
+  margin: 5px;
+  
+}
+
+.animated-background_image{
   animation-duration: 1.25s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -38,10 +67,21 @@ p {
   background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
   background-size: 800px 104px;
   position: relative;
-  width: 100%;
+  width: 80px;
   height: 80px;
+  margin: 5px;
+ 
 }
 
 div {
   height: 100px
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox {
+  display: flex;
 }

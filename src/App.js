@@ -36,7 +36,7 @@ function App() {
   return (
     <main>
       <h1>Get your personal Chuck Norris Quote</h1>
-      <section className="card ">
+      <section>
         {loading === false ? (
           <div
             style={{
@@ -49,11 +49,12 @@ function App() {
             <p className="text">{chuckQuote.value}</p>
           </div>
         ) : (
-          <div>
-            <div className="animated-background">
-              <p className="text" style={{ opacity: 0 }}>
-                {chuckQuote.value}
-              </p>
+          <div className="flexbox">
+            <article className="animated-background_image"></article>
+            <div className="text">
+              <div className="animated-background_text"></div>
+              <div className="animated-background_text"></div>
+              <div className="animated-background_text"></div>
             </div>
           </div>
         )}
