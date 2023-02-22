@@ -1,28 +1,25 @@
 h1 {
   text-align:center;
+  width: 500px;
 }
 
 main {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-
 section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 70vw;
-  max-width: 600px;
-  height: 150px;
+  width: 80%;
+  max-width: 430px;
   box-shadow: 1px 1px 5px chartreuse;
-  padding: 1rem;
   margin: 1rem;
+  padding: 1rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 

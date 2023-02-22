@@ -40,7 +40,8 @@ function App() {
         {loading === false ? (
           <div
             style={{
-              width: "80%",
+              minWidth: "100px",
+              maxWidth: "280px",
               height: "100px",
               display: "flex",
               alignItems: "center",
