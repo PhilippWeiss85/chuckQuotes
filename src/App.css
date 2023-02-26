@@ -13,7 +13,7 @@ main {
 section {
   width: 80%;
   max-width: 430px;
-  box-shadow: 1px 1px 5px chartreuse;
+  box-shadow: 1px 1px 5px black;
   margin: 1rem;
   padding: 1rem;
   position: relative;
@@ -45,10 +45,10 @@ section {
   animation-timing-function: linear;
   background: #F6F6F6;
   background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
-  background-size: 600px 104px;
+  background-size: 800px 104px;
   position: relative;
   display: inline-block;
-  width: 280px;
+  width: 250px;
   height: 20px;
   margin: 5px;
   

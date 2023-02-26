@@ -11,8 +11,14 @@ function App() {
 
   // hier fehlt usecallback
   async function fetchUrl() {
+    setLoading(true);
     const res = await fetch(url);
     const data = await res.json();
+
+    setTimeout(() => {
+      setLoading(false);
+    }, "3000");
+
     setChuckQuote(data);
   }
 
@@ -24,11 +30,6 @@ function App() {
     const timer = setTimeout(() => {
       fetchUrl();
     }, "7000");
-    setLoading(false);
-
-    setTimeout(() => {
-      setLoading(true);
-    }, "3000");
 
     return () => clearTimeout(timer);
   }, [chuckQuote]);
